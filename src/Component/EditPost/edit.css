@@ -1,0 +1,74 @@
+.editPost {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+#headingEP {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.input {
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-bottom: 1px solid #000;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+.input input {
+    appearance: none;
+    border: none;
+    outline: none;
+    height: 35px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.input textarea {
+    margin-top: 10px;
+}
+.editPost a {
+    margin: 0 auto;
+    width: 200px;
+    background: #a900ff;
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 4px 2px 5px #3e3b3b;
+}
+
+@media screen and (max-width: 1200px) {
+    .editPost {
+        width: 90%;
+    }
+    .input {
+        padding: 20px 0;
+        width: 100%;
+    }
+    .input span {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .input input {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .input textarea {
+        margin: 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #headingEP {
+        font-size: 16px;
+    }
+}

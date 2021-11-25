@@ -1,0 +1,133 @@
+#allPost {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+#createNewP {
+    display: flex;
+    justify-content: center;
+    padding: 10px 25px;
+    background: #a900ff;
+    color: #fff;
+    width: 171px;
+    margin: 0 auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 4px 2px 5px #3e3b3b;
+}
+.post {
+    padding: 25px;
+    width: 40%;
+    background-color: #fff;
+    margin: 10px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 15px;
+}
+.post .owner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.post .owner .owner-img {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-size: contain;
+}
+.firstName {
+    margin-right: 5px;
+}
+.owner-des {
+    margin-left: 20px;
+}
+.owner-publishDate {
+    margin-top: 10px;
+}
+.post .owner .owner-des .owner-name {
+    display: flex;
+}
+.post .main-post {
+    display: flex;
+}
+.post .img-post {
+    width: 50%;
+}
+.post .img-post img {
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+}
+.post-description {
+    margin-left: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.post-PD {
+    margin-bottom: 15px;
+}
+.post-tags {
+    display: flex;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+.post-tags span {
+    margin: 5px 5px;
+    padding: 10px;
+    background: red;
+    color: #fff;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    #allPost {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    #allPost {
+        width: 90%;
+        flex-direction: column;
+    }
+    .post {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    .post .main-post {
+        flex-direction: column;
+    }
+    .post .img-post {
+        width: 100%;
+    }
+    .post-description {
+        margin-left: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0;
+    }
+    .post .owner {
+        margin-bottom: 15px;
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+    .post-text {
+        width: 80%;
+    }
+    .post-text p{
+        text-align: center;
+    }
+}

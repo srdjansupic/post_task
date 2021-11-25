@@ -1,0 +1,138 @@
+#createPage {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+#createPage .fields {
+  display: flex;
+  width: 100%;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+#createPage .finput {
+  flex-direction: column;
+}
+#createPage .finput p {
+  margin-bottom: 10px;
+}
+#createPage .finput input {
+  appearance: none;
+  border: none;
+  outline: none;
+  height: 35px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+#createPage .AddImage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ownerImage {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ownerImage img {
+  height: 100px;
+}
+
+#createPage .AddImage .img-holder img {
+  height: 150px;
+}
+
+#input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+#input {
+  width: 200px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+.heading-img {
+  font-size: 20px;
+}
+#input::before {
+  content: "Select some files";
+  display: inline-block;
+  background: red;
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 10px 25px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 10pt;
+  color: #fff;
+}
+
+#input:hover::before {
+  border-color: black;
+}
+#input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.tags input{
+  margin-bottom: 10px !important;
+}
+
+#saveNewP {
+  display: flex;
+  justify-content: center;
+  padding: 10px 25px;
+  background: #a900ff;
+  color: #fff;
+  width: 170px;
+  margin: 0 auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 4px 2px 5px #3e3b3b;
+}
+
+@media screen and (max-width: 768px) {
+  #createPage {
+    width: 90%;
+  }
+  #createPage .fields {
+    padding: 10px 0;
+  }
+  #createPage .fields p {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  #createPage .fields input {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #createPage .fields textarea {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #createPage .AddImage .img-holder img {
+    height: 100px;
+  }
+  .ownerImage .img-div {
+    margin-left: 10px;
+  }
+  .AddImage .img-div {
+    margin-left: 10px;
+  }
+  .img-holder{
+    margin-right: 10px;
+  }
+}

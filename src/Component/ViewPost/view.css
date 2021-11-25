@@ -1,0 +1,205 @@
+.viewPost {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 30px;
+    background: #fff;
+    margin-top: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+.ownerVP-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: contain;
+}
+.ownerVP {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.ownerVP-txt {
+    margin-left: 15px;
+}
+.ownerVP-txt .name {
+    margin-bottom: 15px;
+}
+.firstName {
+    margin-right: 5px;
+}
+.mainVP {
+    display: flex;
+}
+.imageVP {
+    width: 50%;
+}
+.imageVP img {
+    width: 100%;
+    height: 420px;
+    object-fit: contain;
+}
+.desVP {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.desVP .text {
+    margin: 40px 0;
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 50px;
+}
+.textE .text {
+    margin: 40px 0;
+}
+.tags span {
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+}
+.Epost {
+    padding: 10px;
+    background: #a900ff;
+    color: #fff;
+    width: 100px;
+    text-align: center;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 4px 2px 5px #3e3b3b;
+}
+
+/*****
+Comment
+******/
+.comment {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 30px;
+    background: #fff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.comment p {
+    text-transform: uppercase;
+}
+.comment input {
+    appearance: none;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    height: 35px;
+    border: 1px solid rgb(134, 128, 128);
+    border-radius: 10px;
+    padding-left: 15px;
+    width: 30%;
+}
+.comment button {
+    appearance: none;
+    border: none;
+    outline: none;
+    height: 37px;
+    background: #a900ff;
+    color: #fff;
+    padding: 0 20px;
+    border-radius: 10px;
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 4px 2px 5px #3e3b3b;
+    font-family: 'Outfit', sans-serif;
+}
+.allComm {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding:  15px 30px;
+    background: rgb(233, 231, 231);
+    box-shadow:  0 0 8px rgb(68, 67, 67);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.viewCom{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+.viewCom p{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    .viewPost {
+        width: 90%;
+    }
+    .viewPost {
+        padding: 0;
+    }
+    .mainVP {
+        flex-direction: column;
+    }
+    .imageVP {
+        width: 100%;
+        height: 220px;
+    }
+    .imageVP img {
+        height: 220px;
+        width: 100%;
+        object-fit:cover;
+    }
+    .desVP {
+        width: 100%;
+        padding: 40px 0;
+        padding-bottom: 50px;
+    }
+    .Epost {
+        position: inherit;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        width: 50%;
+    }
+    .ownerVP {
+        margin-top: 20px;
+    }
+    .ownerVP-img {
+        width: 70px;
+        height: 70px;
+        margin-left: 15px;
+    }
+    .comment {
+        width: 90%;
+        padding: 0;
+    }
+    .comment p {
+        padding: 20px 20px 0 20px;
+    }
+    .comment div {
+        padding: 0 20px 20px 20px;
+    }
+    .comment input {
+        width: 60%;
+    }
+    .allComm {
+        width: 90%;
+        padding: 20px 0;
+    }
+    .allComm p {
+        margin-left: 20px;
+    }
+}
